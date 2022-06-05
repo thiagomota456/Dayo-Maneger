@@ -75,14 +75,17 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>br.dayo.management.DayoManagementApplication</mainClass>
-						</manifest>
-					</archive>
+					<mainClass>br.dayo.management.DayoManagementApplication</mainClass>
 				</configuration>
+				
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+				
 			</plugin>
 		</plugins>
 	</build>
